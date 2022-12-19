@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>The Ultimate Spongebob Quiz</title>
+    <script src="quizproject.js"></script>
+    <link rel="stylesheet" type="text/css" href="quizproject.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon" />
+  </head>
+  <body onload="loadQuestion()">
+    <section id="lightbox" onclick="closeLightBox()" style="display: none">
+      <div id="message">This is the message</div>
+    </section>
+
+    <h1>The ultimate Spongebob SquarePants Quiz</h1>
+
+    <main class="grid-container">
+      <header class="header">
+        <div id="question">The Question</div>
+        <div id="hint">The Hint</div>
+      </header>
+
+      <aside class="left">
+        <div>
+          <div class="options" id="a" onclick="markIt('a')">A.</div>
+          <div class="options" id="b" onclick="markIt('b')">B.</div>
+          <div class="options" id="c" onclick="markIt('c')">C.</div>
+          <div class="options" id="d" onclick="markIt('d')">D.</div>
+        </div>
+      </aside>
+
+      <figure class="right"><img id="image" src="/" alt="" /></figure>
+
+      <footer class="footer1">
+        <div id="hintbtn" onclick="hintBtn()">Get a hint</div>
+      </footer>
+
+      <footer class="footer2">
+        <p>Score <span id="score"></span></p>
+        <h3>The Ultimate Spongebob SquarePants Quiz</h3>
+      </footer>
+    </main>
+  </body>
+</html>
